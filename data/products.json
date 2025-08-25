@@ -1,66 +1,385 @@
 {
   "products": [
     {
-      "id": "hills-kd-dog-dry-2024",
-      "brand": "Hill's Prescription Diet",
-      "name": "k/d Kidney Care Dry Dog Food",
-      "species": "dog",
-      "targetedConditions": ["kidney disease"],
-      "type": "dry",
-      "bagSizes": ["8.5 lb", "17.6 lb", "27.5 lb"],
+      "id": "prod67598",
+      "name": "Royal Canin Veterinary Diet Canine Gastrointestinal Low Fat Loaf Wet Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
       "features": [
-        "Clinically proven nutrition to improve and lengthen quality of life in dogs with kidney conditions",
-        "ActivBiome+ Kidney Defense blend to support the gut microbiome and kidney function",
-        "Controlled levels of phosphorus and sodium to help protect vital kidney function"
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "wet food format for optimal nutrition delivery"
       ],
-      "analysis": {
-        "protein_min": 15.5,
-        "fat_min": 20.5,
-        "fiber_max": 3,
-        "moisture_max": 10
-      },
-      "feedingGuide": "Consult your veterinarian for precise feeding amounts. For reference, adult dogs weighing 20 lb typically receive about 1 1/3 cups of k/d dry food per day split into two meals.",
-      "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjVFNkQzO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRUZFRkU7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI0MCIgZmlsbD0idXJsKCNiZykiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI4MCIgcj0iMzUiIGZpbGw9IiMyRTdEMzIiIG9wYWNpdHk9IjAuOSIvPgogIDx0ZXh0IHg9IjE1MCIgeT0iOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIj4KICAgIPCfkJUKICA8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMzQzI0MTUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCI+CiAgICBIaWxsJ3MKICA8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICBEUlkgRk9PRAogIDwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFN0QzMiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgIFZFVEVSSU5BUlkgRElFVAogIDwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgIERPRyBOVVRSSVRJT04KICA8L3RleHQ+Cjwvc3ZnPg==",
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBXRVQgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
       "price": {
-        "estimate": 118.66,
-        "range": "$89.99 - $149.99",
-        "note": "Estimated pricing - actual prices may vary by location and retailer",
-        "lastUpdated": "2024-01-15T10:30:00.000Z"
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:18.736Z"
       },
-      "link": "https://www.1800petmeds.com/hills-prescription-diet-kd-kidney-care-dry-dog-food"
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "wet",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-gastrointestinal-low/prod67598.html",
+      "lastUpdated": "2025-08-25T20:20:18.735Z"
     },
     {
-      "id": "hills-cd-cat-dry-2024",
-      "brand": "Hill's Prescription Diet",
-      "name": "c/d Multicare Urinary Care Dry Cat Food",
-      "species": "cat",
-      "targetedConditions": ["urinary"],
-      "type": "dry",
-      "bagSizes": ["4 lb", "8.5 lb", "17.6 lb"],
+      "id": "prod67566",
+      "name": "Royal Canin Veterinary Diet Canine Urinary SO Dry Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
       "features": [
-        "Clinically tested nutrition to lower the recurrence of most common urinary signs",
-        "Promotes desirable urine pH levels and is formulated to dissolve struvite stones",
-        "Enriched with antioxidants, potassium citrate and omega-3 fatty acids"
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
       ],
-      "analysis": {
-        "protein_min": 33,
-        "fat_min": 16,
-        "fiber_max": 1,
-        "moisture_max": 8
-      },
-      "feedingGuide": "For adult cats weighing 10 lb, about 5/8 cup per day is recommended; adjust as needed.",
-      "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjVFNkQzO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRUZFRkU7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI0MCIgZmlsbD0idXJsKCNiZykiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI4MCIgcj0iMzUiIGZpbGw9IiMyRTdEMzIiIG9wYWNpdHk9IjAuOSIvPgogIDx0ZXh0IHg9IjE1MCIgeT0iOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIj4KICAgIPCfkLEKICA8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMzQzI0MTUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCI+CiAgICBIaWxsJ3MKICA8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICBEUlkgRk9PRAogIDwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFN0QzMiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgIFZFVEVSSU5BUlkgRElFVAogIDwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgIENBVCBOVVRSSVRJT04KICA8L3RleHQ+Cjwvc3ZnPg==",
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBEUlkgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
       "price": {
-        "estimate": 69.99,
-        "range": "$64.99 - $79.99",
-        "note": "Estimated pricing - actual prices may vary by location and retailer",
-        "lastUpdated": "2024-01-15T10:30:00.000Z"
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:21.925Z"
       },
-      "link": "https://www.1800petmeds.com/hills-prescription-diet-cd-multicare-urinary-care-dry-cat-food"
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-urinary-so-dry-food/prod67566.html",
+      "lastUpdated": "2025-08-25T20:20:21.925Z"
+    },
+    {
+      "id": "prod13804",
+      "name": "Hill's Prescription Diet i/d Digestive Care Chicken & Vegetable Stew Wet Dog Food",
+      "brand": "Hill's Prescription Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Hill's Prescription Diet quality nutrition",
+        "wet food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgSGlsbCdzCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgV0VUIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:24.732Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "wet",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/hills-prescription-diet-id-digestive-care-chicken-food/prod13804.html",
+      "lastUpdated": "2025-08-25T20:20:24.731Z"
+    },
+    {
+      "id": "prod13802",
+      "name": "Hill's Prescription Diet i/d Low Fat Digestive Care Rice, Vegetable & Chicken Stew Wet Dog Food",
+      "brand": "Hill's Prescription Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Hill's Prescription Diet quality nutrition",
+        "wet food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgSGlsbCdzCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgV0VUIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:27.589Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "wet",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/hills-prescription-diet-id-low-fat-digestive-care-rice/prod13802.html",
+      "lastUpdated": "2025-08-25T20:20:27.588Z"
+    },
+    {
+      "id": "prod66101",
+      "name": "Purina Pro Plan Veterinary Diets NC NeuroCare Canine Formula Dry Dog Food",
+      "brand": "Purina Pro Plan Veterinary Diets",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Purina Pro Plan Veterinary Diets quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUHVyaW5hCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgRFJZIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:30.505Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/purina-pro-plan-veterinary-diets-nc-neurocare-canine/prod66101.html",
+      "lastUpdated": "2025-08-25T20:20:30.505Z"
+    },
+    {
+      "id": "prod66076",
+      "name": "Purina Pro Plan Veterinary Diets EN Gastroenteric Low Fat Canine Formula Dry Dog Food",
+      "brand": "Purina Pro Plan Veterinary Diets",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Purina Pro Plan Veterinary Diets quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUHVyaW5hCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgRFJZIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:33.308Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/purina-pro-plan-veterinary-diets-en-gastroenteric-low-dry/prod66076.html",
+      "lastUpdated": "2025-08-25T20:20:33.307Z"
+    },
+    {
+      "id": "prod13906",
+      "name": "Hill's Prescription Diet u/d Urinary Care Chicken Flavor Dry Dog Food",
+      "brand": "Hill's Prescription Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Hill's Prescription Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgSGlsbCdzCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgRFJZIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:36.138Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/hills-prescription-diet-ud-urinary-care-chicken-flavor/prod13906.html",
+      "lastUpdated": "2025-08-25T20:20:36.138Z"
+    },
+    {
+      "id": "prod67663",
+      "name": "Royal Canin Veterinary Diet Canine Renal Support S Dry Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBEUlkgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:39.186Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-renal-support-s-dry/prod67663.html",
+      "lastUpdated": "2025-08-25T20:20:39.185Z"
+    },
+    {
+      "id": "prod67706",
+      "name": "Royal Canin Veterinary Diet Canine Selected Protein PD Dry Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBEUlkgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:42.025Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-selected-protein-pd-dry/prod67706.html",
+      "lastUpdated": "2025-08-25T20:20:42.025Z"
+    },
+    {
+      "id": "prod13619",
+      "name": "Hill's Science Diet Adult Sensitive Stomach & Skin Small & Mini Chicken Dry Dog Food",
+      "brand": "Hill's Prescription Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Hill's Prescription Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgSGlsbCdzCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgRFJZIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:44.839Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/food/product/hills-science-diet-adult-sensitive-stomach-skin-small-mini/prod13619.html",
+      "lastUpdated": "2025-08-25T20:20:44.839Z"
+    },
+    {
+      "id": "prod67676",
+      "name": "Royal Canin Veterinary Diet Canine Renal Support Early Consult Dry Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBEUlkgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:47.616Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-renal-support-early-dry/prod67676.html",
+      "lastUpdated": "2025-08-25T20:20:47.615Z"
+    },
+    {
+      "id": "prod67714",
+      "name": "Royal Canin Veterinary Diet Canine Hydrolyzed Protein PS Dry Dog Food",
+      "brand": "Royal Canin Veterinary Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Royal Canin Veterinary Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgUm95YWwKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyRDUwMTYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBEUlkgRk9PRAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjE4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNTAwIj4KICAgICAgICAgIFZFVEVSSU5BUlkgRElFVAogICAgICAgIDwvdGV4dD4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzg3QTk2QiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIj4KICAgICAgICAgIERPRyBOVVRSSVRJT04KICAgICAgICA8L3RleHQ+CiAgICAgIDwvc3ZnPgogICAg",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:50.283Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/royal-canin-veterinary-diet-canine-hydrolyzed-protein-ps-dry/prod67714.html",
+      "lastUpdated": "2025-08-25T20:20:50.282Z"
+    },
+    {
+      "id": "prod13905",
+      "name": "Hill's Prescription Diet r/d Weight Reduction Chicken Flavor Dry Dog Food",
+      "brand": "Hill's Prescription Diet",
+      "description": null,
+      "features": [
+        "Veterinary prescription diet for dogs",
+        "Specially formulated for kidney disease, urinary, digestive",
+        "Hill's Prescription Diet quality nutrition",
+        "dry food format for optimal nutrition delivery"
+      ],
+      "image": "data:image/svg+xml;base64,CiAgICAgIDxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgPGRlZnM+CiAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Y1RTZEMztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkVGRUZFO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8L2RlZnM+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjYmcpIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjM1IiBmaWxsPSIjODdBOTZCIiBvcGFjaXR5PSIwLjkiLz4KICAgICAgICA8dGV4dCB4PSIxNTAiIHk9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICAgICAgICDwn5CVCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM0MyNDE1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiPgogICAgICAgICAgSGlsbCdzCiAgICAgICAgPC90ZXh0PgogICAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMkQ1MDE2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiPgogICAgICAgICAgRFJZIEZPT0QKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjUwMCI+CiAgICAgICAgICBWRVRFUklOQVJZIERJRVQKICAgICAgICA8L3RleHQ+CiAgICAgICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4N0E5NkIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgICAgICBET0cgTlVUUklUSU9OCiAgICAgICAgPC90ZXh0PgogICAgICA8L3N2Zz4KICAgIA==",
+      "price": {
+        "estimate": 49,
+        "range": "$49",
+        "note": "Price from 1800PetMeds",
+        "lastUpdated": "2025-08-25T20:20:53.339Z"
+      },
+      "bagSizes": [],
+      "species": "dog",
+      "targetedConditions": [
+        "kidney disease",
+        "urinary",
+        "digestive"
+      ],
+      "type": "dry",
+      "link": "https://www.1800petmeds.com/dog/rx-food-and-treats/product/hills-prescription-diet-rd-weight-reduction-chicken-dog/prod13905.html",
+      "lastUpdated": "2025-08-25T20:20:53.338Z"
     }
   ],
-  "lastUpdated": "2024-01-15T10:30:00.000Z",
-  "totalProducts": 2,
+  "lastUpdated": "2025-08-25T20:20:55.348Z",
+  "totalProducts": 13,
   "source": "1800petmeds.com",
   "priceDisclaimer": "Prices are estimates based on available data and may vary by location, retailer, and current promotions. Always consult your veterinarian and check with retailers for current pricing.",
   "version": "2.0"
