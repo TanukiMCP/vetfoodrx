@@ -1,207 +1,153 @@
 /*
- * Netlify Scheduled Function: scheduled-price-update
+ * Scheduled Product Database Update Function
  *
- * This function runs on a schedule to update product pricing data
- * by scraping 1800PetMeds and Wag.com for all products in the database.
+ * This function runs on a schedule to completely refresh the product database
+ * by scraping fresh, comprehensive data from 1800PetMeds including:
+ * - Product names, descriptions, and features
+ * - High-quality product images
+ * - Current pricing information
+ * - Bag sizes and quantity options
+ * - Health condition targeting
+ * - Brand information
  * 
  * Schedule: Runs every Sunday at 2:00 AM UTC
  * 
- * To enable scheduled functions in Netlify:
- * 1. Add to netlify.toml: 
- *    [[functions]]
- *    schedule = "0 2 * * 0"
- *    name = "scheduled-price-update"
- * 
- * 2. Deploy to Netlify (scheduled functions only work in production)
+ * Configuration in netlify.toml:
+ * [[functions]]
+ * schedule = "0 2 * * 0"
+ * name = "scheduled-price-update"
  */
 
-const https = require('https');
 const fs = require('fs').promises;
 const path = require('path');
 
-// Import the scraping logic from the main scraper
-const { handler: scrapePrices } = require('./productPriceScraper');
-
-// Product slug mappings for different retailers
-const PRODUCT_MAPPINGS = {
-  // Hill's Prescription Diet products
-  'hills-kd-dog-dry': {
-    petmeds: 'hills-prescription-diet-k-d-kidney-care-dry-dog-food',
-    wag: 'hills-prescription-diet-kd-kidney-care-dry-dog-food'
-  },
-  'hills-kd-dog-wet': {
-    petmeds: 'hills-prescription-diet-k-d-kidney-care-canned-dog-food',
-    wag: 'hills-prescription-diet-kd-kidney-care-wet-dog-food'
-  },
-  'hills-wd-dog-dry': {
-    petmeds: 'hills-prescription-diet-w-d-multi-benefit-dry-dog-food',
-    wag: 'hills-prescription-diet-wd-weight-management-dry-dog-food'
-  },
-  'hills-id-dog-dry': {
-    petmeds: 'hills-prescription-diet-i-d-digestive-care-dry-dog-food',
-    wag: 'hills-prescription-diet-id-digestive-care-dry-dog-food'
-  },
-  'hills-zd-dog-dry': {
-    petmeds: 'hills-prescription-diet-z-d-skin-food-sensitivities-dry-dog-food',
-    wag: 'hills-prescription-diet-zd-food-sensitivities-dry-dog-food'
-  },
-  'hills-cd-cat-dry': {
-    petmeds: 'hills-prescription-diet-c-d-multicare-urinary-care-dry-cat-food',
-    wag: 'hills-prescription-diet-cd-multicare-urinary-care-dry-cat-food'
-  },
-  'hills-yd-cat-dry': {
-    petmeds: 'hills-prescription-diet-y-d-thyroid-care-dry-cat-food',
-    wag: 'hills-prescription-diet-yd-thyroid-care-dry-cat-food'
-  },
-  // Royal Canin products
-  'rc-renal-dog-dry': {
-    petmeds: 'royal-canin-veterinary-diet-renal-support-a-dry-dog-food',
-    wag: 'royal-canin-veterinary-diet-renal-support-dry-dog-food'
-  },
-  'rc-urinary-dog-dry': {
-    petmeds: 'royal-canin-veterinary-diet-urinary-so-dry-dog-food',
-    wag: 'royal-canin-veterinary-diet-urinary-so-dry-dog-food'
-  },
-  // Purina Pro Plan products
-  'ppvd-en-dog-dry': {
-    petmeds: 'purina-pro-plan-veterinary-diets-en-gastroenteric-dry-dog-food',
-    wag: 'purina-pro-plan-veterinary-diets-en-gastroenteric-dry-dog-food'
-  },
-  'ppvd-om-dog-dry': {
-    petmeds: 'purina-pro-plan-veterinary-diets-om-overweight-management-dry-dog-food',
-    wag: 'purina-pro-plan-veterinary-diets-om-overweight-management-dry-dog-food'
-  }
-  // Add more product mappings as needed...
-};
-
-async function loadProductData() {
-  try {
-    const dataPath = path.join(process.cwd(), 'data', 'products.json');
-    const data = await fs.readFile(dataPath, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error('Failed to load product data:', error);
-    return { products: [] };
-  }
-}
+// Import our comprehensive database updater
+const { handler: databaseUpdater } = require('./update-product-database');
 
 async function saveProductData(data) {
   try {
     const dataPath = path.join(process.cwd(), 'data', 'products.json');
-    await fs.writeFile(dataPath, JSON.stringify(data, null, 2));
-    console.log('Product data saved successfully');
+    await fs.writeFile(dataPath, JSON.stringify(data, null, 2), 'utf8');
+    console.log('Product database saved successfully to products.json');
+    return true;
   } catch (error) {
-    console.error('Failed to save product data:', error);
-    throw error;
+    console.error('Error saving product database:', error);
+    return false;
   }
 }
 
-async function updateProductPrices(products) {
-  const updatedProducts = [];
-  let successCount = 0;
-  let errorCount = 0;
-
-  for (const product of products) {
-    const mapping = PRODUCT_MAPPINGS[product.id];
+async function createBackup() {
+  try {
+    const dataPath = path.join(process.cwd(), 'data', 'products.json');
+    const backupPath = path.join(process.cwd(), 'data', `products-backup-${Date.now()}.json`);
     
-    if (!mapping) {
-      console.log(`No mapping found for product: ${product.id}`);
-      updatedProducts.push(product);
-      continue;
-    }
-
+    // Check if current file exists
     try {
-      // Create mock event object for the scraper function
-      const mockEvent = {
-        queryStringParameters: {
-          petmedsSlug: mapping.petmeds,
-          wagSlug: mapping.wag,
-          productId: product.id
-        }
-      };
-
-      const result = await scrapePrices(mockEvent, {});
-      const responseData = JSON.parse(result.body);
-
-      if (result.statusCode === 200 && responseData.averagePrice) {
-        // Update product with new pricing data
-        const updatedProduct = {
-          ...product,
-          price: {
-            average: responseData.averagePrice,
-            sources: responseData.sources,
-            lastUpdated: responseData.timestamp
-          }
-        };
-        
-        updatedProducts.push(updatedProduct);
-        successCount++;
-        console.log(`Updated pricing for ${product.id}: $${responseData.averagePrice}`);
-      } else {
-        console.log(`No price data found for ${product.id}`);
-        updatedProducts.push(product);
-      }
-
-      // Rate limiting: wait 2 seconds between requests
-      await new Promise(resolve => setTimeout(resolve, 2000));
-
+      await fs.access(dataPath);
+      await fs.copyFile(dataPath, backupPath);
+      console.log(`Backup created: ${backupPath}`);
+      return true;
     } catch (error) {
-      console.error(`Error updating ${product.id}:`, error.message);
-      updatedProducts.push(product);
-      errorCount++;
+      console.log('No existing products.json to backup');
+      return true;
     }
+  } catch (error) {
+    console.error('Error creating backup:', error);
+    return false;
   }
-
-  console.log(`Price update completed: ${successCount} updated, ${errorCount} errors`);
-  return updatedProducts;
 }
 
 exports.handler = async function (event, context) {
-  console.log('Starting scheduled price update...');
+  const startTime = Date.now();
   
   try {
-    // Load current product data
-    const productData = await loadProductData();
+    console.log('=== Starting Scheduled Product Database Update ===');
+    console.log(`Timestamp: ${new Date().toISOString()}`);
     
-    if (!productData.products || productData.products.length === 0) {
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ message: 'No products found to update' })
-      };
+    // Create backup of existing data
+    const backupCreated = await createBackup();
+    if (!backupCreated) {
+      console.warn('Failed to create backup, continuing anyway...');
+    }
+    
+    // Call our comprehensive database updater function
+    const mockEvent = {
+      queryStringParameters: {
+        forceUpdate: 'true'
+      }
+    };
+
+    console.log('Calling comprehensive product scraper...');
+    const result = await databaseUpdater(mockEvent, {});
+    
+    if (result.statusCode !== 200) {
+      throw new Error(`Database update failed with status ${result.statusCode}`);
     }
 
-    // Update prices for all products
-    const updatedProducts = await updateProductPrices(productData.products);
+    const updateResult = JSON.parse(result.body);
     
-    // Save updated data
-    const updatedData = {
-      ...productData,
-      products: updatedProducts,
-      lastPriceUpdate: new Date().toISOString()
-    };
+    if (!updateResult.success) {
+      throw new Error(`Database update failed: ${updateResult.error || 'Unknown error'}`);
+    }
+
+    console.log('Scraping completed successfully!');
+    console.log(`- Total products: ${updateResult.statistics.totalProducts}`);
+    console.log(`- Dog products: ${updateResult.statistics.dogProducts}`);
+    console.log(`- Cat products: ${updateResult.statistics.catProducts}`);
+
+    // Save the updated database to products.json
+    const savedSuccessfully = await saveProductData(updateResult.database);
     
-    await saveProductData(updatedData);
+    if (!savedSuccessfully) {
+      throw new Error('Failed to save updated product database to file');
+    }
+
+    const duration = Date.now() - startTime;
+    const stats = updateResult.statistics;
+    
+    console.log(`=== Update Completed Successfully ===`);
+    console.log(`Processing time: ${duration}ms`);
+    console.log(`Data source: 1800petmeds.com`);
+    console.log(`Last updated: ${stats.lastUpdated}`);
 
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: 'Price update completed successfully',
-        productsProcessed: updatedProducts.length,
-        timestamp: new Date().toISOString()
+        success: true,
+        message: 'Scheduled product database update completed successfully',
+        statistics: {
+          totalProducts: stats.totalProducts,
+          dogProducts: stats.dogProducts,
+          catProducts: stats.catProducts,
+          processingTimeMs: duration,
+          lastUpdated: stats.lastUpdated,
+          timestamp: new Date().toISOString()
+        },
+        dataSource: '1800petmeds.com',
+        version: '2.0',
+        backupCreated: backupCreated
       })
     };
 
   } catch (error) {
-    console.error('Scheduled price update failed:', error);
+    const duration = Date.now() - startTime;
     
+    console.error('=== Scheduled Update Failed ===');
+    console.error(`Error: ${error.message}`);
+    console.error(`Processing time: ${duration}ms`);
+    console.error(`Timestamp: ${new Date().toISOString()}`);
+
     return {
       statusCode: 500,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        error: 'Price update failed',
+        success: false,
+        error: 'Scheduled product database update failed',
         details: error.message,
-        timestamp: new Date().toISOString()
+        processingTimeMs: duration,
+        timestamp: new Date().toISOString(),
+        suggestion: 'Check logs for detailed error information. Backup file may be available if update failed after scraping.'
       })
     };
   }
