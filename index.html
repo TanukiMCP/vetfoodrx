@@ -20,15 +20,50 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <style>
+      :root {
+        /* Animal-friendly color palette */
+        --primary-green: #2D5016;
+        --sage-green: #87A96B;
+        --warm-orange: #D2691E;
+        --terracotta: #CD853F;
+        --cream: #F5F5DC;
+        --light-beige: #F5E6D3;
+        --dark-brown: #3C2415;
+        --soft-white: #FEFEFE;
+        --card-shadow: 0 4px 12px rgba(45, 80, 22, 0.1);
+        --hover-shadow: 0 8px 24px rgba(45, 80, 22, 0.15);
+      }
+      
       body {
         margin: 0;
         font-family: Roboto, sans-serif;
-        background-color: #fafafa;
+        background: linear-gradient(135deg, var(--soft-white) 0%, var(--light-beige) 100%);
+        color: var(--dark-brown);
+        min-height: 100vh;
       }
+      
       #root {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: var(--light-beige);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: var(--sage-green);
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-green);
       }
     </style>
   </head>
