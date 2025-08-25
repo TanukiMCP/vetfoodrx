@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Scheduled function to update product prices weekly
+[[functions]]
+  schedule = "0 2 * * 0"  # Every Sunday at 2:00 AM UTC
+  name = "scheduled-price-update"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
