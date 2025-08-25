@@ -83,9 +83,12 @@ function App() {
 
   // Load product data from local JSON on mount
   useEffect(() => {
-    fetch('./data/products.json')
+    // Add cache-busting parameter to ensure fresh data
+    const cacheBreaker = Date.now();
+    fetch(`./data/products.json?v=${cacheBreaker}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(`Loaded ${data.products?.length || 0} products from ${data.source || 'unknown source'}`);
         setProducts(data.products || []);
       })
       .catch((err) => console.error('Error loading product data', err));
